@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM Example</title>
+</head>
+<body>
+    <h1>Hello, JavaScript DOM!</h1>
+    <p id="demo">This is a paragraph.</p>
+    <button id="btn">Click me</button>
+
+    <script>
+        // JavaScript code to change paragraph content and background color
+        document.getElementById("btn").addEventListener("click", function() {
+            var paragraph = document.getElementById("demo");
+            paragraph.innerHTML = "Content changed by JavaScript";
+            paragraph.style.backgroundColor = "yellow";
+        });
+    </script>
+</body>
+</html>
