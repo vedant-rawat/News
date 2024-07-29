@@ -44,7 +44,7 @@ export default class App extends Component {
               <Route path='/sports' element={<News setProgress = {this.setProgress} key='sports' pageSize={6} country='in' category='sports' />}></Route>
               <Route path='/technology' element={<News setProgress = {this.setProgress} key='technology' pageSize={6} country='in' category='technology' />}></Route>
             </Routes>
-          </div>
+          </div> 
           
         </Router>
       </div>

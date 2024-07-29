@@ -3,15 +3,15 @@ import React, { Component } from 'react'
 export class NewsItem extends Component {
   
   render() {
-    let {title, desc, imageUrl} = this.props;
+    let {title, desc, imageUrl, url} = this.props;
     return (
       <div>
         <div className="card my-3 mx-3" style={{width: "18rem"}}>
-            <img src = {imageUrl ? imageUrl : "https://c.ndtvimg.com/2023-12/bs6kptd_virat-kohli-rohit-sharma-reuters-_625x300_25_December_23.jpg?im=FeatureCrop,algorithm=dnn,width=1200,height=675"} className="card-img-top" alt="..."/>
+            <img src = {imageUrl ? imageUrl : "https://www.shutterstock.com/shutterstock/photos/1928997539/display_1500/stock-vector-breaking-news-template-with-d-red-and-blue-badge-breaking-news-text-on-dark-blue-with-earth-and-1928997539.jpg"} className="card-img-top" alt="..."/>
             <div className="card-body">
                 <h5 className="card-title">{title}</h5>
                 <p className="card-text">{desc}</p>
-                <a href="/" className="btn btn-primary">Go somewhere</a>
+                <a href={url} className="btn btn-primary">Go somewhere</a>
             </div>
         </div>
         
